@@ -24,60 +24,60 @@ Check out this [slides presentation](http://slides.com/nickjanssen/declarative-b
 
 Scaffolding tools such as Brunch and Yeoman are great, but are a headache when you need to build and maintain several apps. Web apps usually have the same requirements in terms of build tooling:
 
-* Test the code
-* Clean the build directory
-* Copy source files to the build folder
-* Do some magic tricks on your copied files, such as replacing variable names
-* Compile Less or Sass files
+* Test the code.
+* Clean the build directory.
+* Copy source files to the build folder.
+* Do some magic tricks on your copied files, such as replacing variable names.
+* Compile Less or Sass files.
 * Dynamically generate script tags for your index.html
-* Run a webserver to test out your app locally
-* Watch for code changes and re-build
+* Run a webserver to test out your app locally.
+* Watch for code changes and re-build.
 
 Having these build steps generated for you becomes a maintenance nightmare when you want to change something.
 
 Angus solves these problems by turning the build process into something generic and reusable. It simplifies your build configuration by making it declarative, telling Angus how you'd like your sandwich instead of making the sandwich yourself. No more fiddling with Grunt/Gulpfiles!
 
 ## Features
-* Pre-configured build system
-* Super fast using streams
-* Declarative build config
-* Framework agnostic
-* Easily define libraries your app is using
-* Integrated connect server with pushState support
-* Auto refresh when files change
-* Soft CSS refresh
-* Built-in unit testing (see `testRunner` config option)
-* Auto-compile Sass or Less
-* Automatically references scripts, templates and CSS in your `.html` files
-* Easily make a production build using `angus prod` (minified and concatenated)
-* Deploy directly to Amazon S3 using `angus s3`
-* Serve static resources from a CDN on production
-* Unique sounds on build success and break (No more boring system beeps!)
-* CoffeeScript support
-* Custom tasks
+* Pre-configured build system.
+* Super fast using streams.
+* Declarative build config.
+* Framework agnostic.
+* Easily define libraries your app is using.
+* Integrated connect server with pushState support.
+* Auto refresh when files change.
+* Soft CSS refresh.
+* Built-in unit testing (see `testRunner` config option).
+* Auto-compile Sass or Less.
+* Automatically references scripts, templates and CSS in your `.html` files.
+* Easily make a production build using `angus prod` (minified and concatenated).
+* Deploy directly to Amazon S3 using `angus s3`.
+* Serve static resources from a CDN on production.
+* Unique sounds on build success and break (No more boring system beeps!).
+* CoffeeScript support.
+* Custom tasks.
 
 # Quick start
-Install Angus globally with npm
+Install Angus globally with npm.
 ```
 npm install -g angus
 ```
 
-Create an example app somewhere
+Create an example app somewhere.
 ```
 angus create my-app
 ```
 
-Enter the newly created app folder
+Enter the newly created app folder.
 ```
 cd my-app
 ```
 
-Run the app
+Run the app.
 ```
 angus dev
 ```
 
-Open your browser and navigate to
+Open your browser and navigate to:
 ```
 http://localhost:9000/
 ```
